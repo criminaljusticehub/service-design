@@ -1,0 +1,138 @@
+name: Content work
+description: Create, review, improve or publish content.
+title: "[Content]: "
+labels: ["workstream: content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for content ideas, drafting, peer review, legal review, upload and release work.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What content needs to be created, changed, reviewed or published?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: work_type
+    attributes:
+      label: Work type
+      options:
+        - Idea
+        - Content page
+        - Story
+        - Task
+        - Epic
+        - Decision
+        - Risk
+    validations:
+      required: true
+
+  - type: dropdown
+    id: theme
+    attributes:
+      label: Theme
+      options:
+        - Understanding the Justice System
+        - Navigating the Justice System
+        - Support for affected individuals & families
+        - Resources for professionals
+        - Accessibility & user experience
+        - Content Management & Governance
+        - Team tasks
+    validations:
+      required: true
+
+  - type: input
+    id: initiative
+    attributes:
+      label: Initiative
+      placeholder: e.g. Guidance & forms, Search & IA, Resource accessibility
+    validations:
+      required: true
+
+  - type: dropdown
+    id: moscow
+    attributes:
+      label: MoSCoW priority
+      options:
+        - Must Have
+        - Should Have
+        - Could Have
+        - Won't Have for now
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tshirt_size
+    attributes:
+      label: T-shirt size
+      description: XS <1 hour; S 1-5 hours; M 10-15 hours/1-2 days; L up to 1 week; XL more than 1 week.
+      options:
+        - XS - less than 1 hour
+        - S - 1 to 5 hours
+        - M - 10 to 15 hours / 1 to 2 days
+        - L - up to 1 week
+        - XL - more than 1 week
+    validations:
+      required: true
+
+  - type: textarea
+    id: user_need
+    attributes:
+      label: User need or problem
+      placeholder: As a user, I need..., so that...
+    validations:
+      required: true
+
+  - type: textarea
+    id: source_material
+    attributes:
+      label: Source material
+      description: Link to GOV.UK, College of Policing, CPS, FCN, internal docs or other source material.
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ] Content meets the user need
+        - [ ] Content is accurate and sourced
+        - [ ] Content is written in plain English
+        - [ ] Content is accessible
+    validations:
+      required: true
+
+  - type: textarea
+    id: ready
+    attributes:
+      label: Definition of Ready
+      value: |
+        - [ ] Title and description are clear and concise
+        - [ ] Goal or purpose is understood
+        - [ ] Acceptance criteria are defined and testable
+        - [ ] Relevant designs, links or documents are attached
+        - [ ] Dependencies are identified
+        - [ ] Task is broken down appropriately
+        - [ ] Scope is well-defined
+        - [ ] Prioritised using MoSCoW
+        - [ ] Aligned with team goals, epics or initiatives
+        - [ ] Team has reviewed and agreed it is ready
+        - [ ] Task is assignable
+
+  - type: textarea
+    id: done
+    attributes:
+      label: Content Definition of Done
+      value: |
+        - [ ] Written and reviewed for clarity, tone and accuracy
+        - [ ] Peer-reviewed
+        - [ ] Legal review completed where needed
+        - [ ] SEO and metadata included during writing
+        - [ ] Content is accessible
+        - [ ] Uploaded to CMS or shared in the correct format
+        - [ ] Source, version and review date recorded where appropriate
+        - [ ] Released or marked ready for release
