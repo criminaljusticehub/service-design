@@ -1,0 +1,118 @@
+name: Research work
+description: Plan, carry out, analyse or share research.
+title: "[Research]: "
+labels: ["workstream: research"]
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Research objective
+      description: What are we trying to learn?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: work_type
+    attributes:
+      label: Work type
+      options:
+        - Research activity
+        - Story
+        - Task
+        - Epic
+        - Decision
+        - Risk
+    validations:
+      required: true
+
+  - type: dropdown
+    id: theme
+    attributes:
+      label: Theme
+      options:
+        - Understanding the Justice System
+        - Navigating the Justice System
+        - Support for affected individuals & families
+        - Resources for professionals
+        - Accessibility & user experience
+        - Content Management & Governance
+        - Team tasks
+    validations:
+      required: true
+
+  - type: input
+    id: initiative
+    attributes:
+      label: Initiative
+      placeholder: e.g. User feedback and testing, Resource accessibility
+    validations:
+      required: true
+
+  - type: dropdown
+    id: moscow
+    attributes:
+      label: MoSCoW priority
+      options:
+        - Must Have
+        - Should Have
+        - Could Have
+        - Won't Have for now
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tshirt_size
+    attributes:
+      label: T-shirt size
+      description: XS <1 hour; S 1-5 hours; M 10-15 hours/1-2 days; L up to 1 week; XL more than 1 week.
+      options:
+        - XS - less than 1 hour
+        - S - 1 to 5 hours
+        - M - 10 to 15 hours / 1 to 2 days
+        - L - up to 1 week
+        - XL - more than 1 week
+    validations:
+      required: true
+
+  - type: textarea
+    id: questions
+    attributes:
+      label: Research questions
+      placeholder: |
+        - 
+        - 
+        - 
+    validations:
+      required: true
+
+  - type: textarea
+    id: method
+    attributes:
+      label: Method
+      description: Interviews, usability testing, desk research, survey, analytics review, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: participants
+    attributes:
+      label: Participants or users
+      description: Who is this research with or about?
+
+  - type: textarea
+    id: outputs
+    attributes:
+      label: Expected outputs
+      description: What should this produce?
+      placeholder: e.g. findings note, journey map, user stories, content recommendations.
+
+  - type: textarea
+    id: done
+    attributes:
+      label: Research Definition of Done
+      value: |
+        - [ ] Research objective is met
+        - [ ] Sessions completed, with notes captured
+        - [ ] Findings synthesised and documented
+        - [ ] Outputs shared with relevant teams
+        - [ ] Relevant user stories or technical tasks created for the backlog
