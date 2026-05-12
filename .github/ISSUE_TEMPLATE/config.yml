@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Criminal Justice Hub service design guidance
+    url: https://github.com/criminaljusticehub
+    about: Please check the team guidance before creating a new issue.
